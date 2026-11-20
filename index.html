@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework Benchmarks - Compare Frontend Frameworks</title>
+    <meta name="description" content="A comprehensive comparison of modern frontend frameworks">
+    <meta name="keywords" content="weather, frontend frameworks, comparison, open source, benchmarks, performance, javascript, web frameworks, frontend, react, vue, svelte">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Alicia Sykes">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://benchmarks.snapse.org/">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+<link rel="stylesheet" href="static/css/homepage.css">
+<link rel="stylesheet" href="static/css/chart-stuff.css">
+<link rel="stylesheet" href="static/css/framework-table.css">
+    
+     <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Framework Benchmarks">
+    <meta property="og:description" content="A comprehensive comparison of modern frontend frameworks">
+    <meta property="og:url" content="https://benchmarks.snapse.org/">
+    <meta property="og:image" content="https://benchmarks.snapse.org/banner.png">
+    <meta property="og:site_name" content="Framework Benchmarks">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Lissy_Sykes">
+    <meta name="twitter:creator" content="@Lissy_Sykes">
+    <meta name="twitter:title" content="Framework Benchmarks">
+    <meta name="twitter:description" content="A comprehensive comparison of modern frontend frameworks">
+    <meta name="twitter:image" content="https://benchmarks.snapse.org/banner.png">
+    
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="static/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/logo.png" color="#6762ff">
+    <meta name="image" content="https://benchmarks.snapse.org/banner.png">
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#6762ff">
+    <link rel="security.txt" href="/security.txt">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Framework Benchmarks",
+        "url": "https://benchmarks.snapse.org",
+        "description": "A comprehensive comparison of modern frontend frameworks",
+        "author": {
+            "@type": "Person",
+            "name": "Alicia Sykes",
+            "url": "https://aliciasykes.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Framework Benchmarks",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://benchmarks.snapse.org/logo.png"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navigation" role="navigation" aria-label="Main navigation">
+            <a href="/" class="nav-logo" aria-label="Home">
+                <div class="site-name">
+                    <span class="site-title">Framework Benchmarks</span>
+                    <p>Comparing every frontend framework</p>
+                </div>
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-links" id="nav-menu">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/#framework-results" class="nav-link">Results</a>
+                <a href="/docs/" class="nav-link">Docs</a>
+
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Frameworks
+                        <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                            <path d="M6 9L1 4h10z"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                        <a href="/react/" class="dropdown-item" role="menuitem">
+                            React
+                        </a>
+                        <a href="/angular/" class="dropdown-item" role="menuitem">
+                            Angular
+                        </a>
+                        <a href="/svelte/" class="dropdown-item" role="menuitem">
+                            Svelte
+                        </a>
+                        <a href="/preact/" class="dropdown-item" role="menuitem">
+                            Preact
+                        </a>
+                        <a href="/solid/" class="dropdown-item" role="menuitem">
+                            Solid.js
+                        </a>
+                        <a href="/qwik/" class="dropdown-item" role="menuitem">
+                            Qwik
+                        </a>
+                        <a href="/vue/" class="dropdown-item" role="menuitem">
+                            Vue
+                        </a>
+                        <a href="/vue-vapor/" class="dropdown-item" role="menuitem">
+                            Vue Vapor
+                        </a>
+                        <a href="/jquery/" class="dropdown-item" role="menuitem">
+                            jQuery
+                        </a>
+                        <a href="/alpine/" class="dropdown-item" role="menuitem">
+                            Alpine.js
+                        </a>
+                        <a href="/lit/" class="dropdown-item" role="menuitem">
+                            Lit
+                        </a>
+                        <a href="/vanjs/" class="dropdown-item" role="menuitem">
+                            VanJS
+                        </a>
+                        <a href="/astro/" class="dropdown-item" role="menuitem">
+                            Astro
+                        </a>
+                        <a href="/lume-js/" class="dropdown-item" role="menuitem">
+                            Lume.js
+                        </a>
+                        <a href="/octane/" class="dropdown-item" role="menuitem">
+                            Octane
+                        </a>
+                        <a href="/geajs/" class="dropdown-item" role="menuitem">
+                            Gea
+                        </a>
+                        <a href="/vanilla/" class="dropdown-item" role="menuitem">
+                            Vanilla JS
+                        </a>
+                        <a href="/snapse/" class="dropdown-item" role="menuitem">
+                            Snapse
+                        </a>
+                    </div>
+                </div>
+
+                <a href="https://stack-match.as93.net/" class="nav-link" target="_blank" rel="noopener">Stack Match</a>
+                <a href="https://github.com/lissy93/framework-benchmarks" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+
+<div class="homepage-container">
+<section class="hero">
+    <div class="hero-left">
+        <h1>Framework Benchmarks</h1>
+        <p class="subtitle">The same app, built in <i>every</i> frontend web framework, and then benchmarked</p>
+        <div class="hero-buttons">
+            <a class="primary-cta" href="https://github.com/lissy93/framework-benchmarks" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                </svg>
+                View on GitHub
+            </a>
+            <a class="primary-cta" href="https://stack-match.as93.net/" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3v18h18"/>
+                    <path d="M18 17V9"/>
+                    <path d="M13 17v-4"/>
+                    <path d="M8 17v-6"/>
+                </svg>
+                Choose a Framework
+            </a>
+        </div>
+        <div class="hero-buttons">
+            <a class="secondary-cta" href="#framework-results">Results</a>
+            <a class="secondary-cta" href="#framework-stats">Stats</a>
+            <a class="secondary-cta" href="#framework-apps">Apps</a>
+            <a class="secondary-cta" href="/docs">Docs</a>
+        </div>
+    </div>
+    <div class="lil-grid">
+        <a
+            href="/react/"
+            class="framework-card"
+            style="--fw-color: #61DAFB;"
+            data-framework="react"
+            title="React"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/react"
+                 alt="⚛️"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">R</div>
+        </a>
+        <a
+            href="/angular/"
+            class="framework-card"
+            style="--fw-color: #DD0031;"
+            data-framework="angular"
+            title="Angular"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/angular"
+                 alt="🅰️"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">A</div>
+        </a>
+        <a
+            href="/svelte/"
+            class="framework-card"
+            style="--fw-color: #ff3e00;"
+            data-framework="svelte"
+            title="Svelte"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/svelte"
+                 alt="🔥"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">S</div>
+        </a>
+        <a
+            href="/preact/"
+            class="framework-card"
+            style="--fw-color: #673AB8;"
+            data-framework="preact"
+            title="Preact"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/preact"
+                 alt="💜"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">P</div>
+        </a>
+        <a
+            href="/solid/"
+            class="framework-card"
+            style="--fw-color: #2C4F7C;"
+            data-framework="solid"
+            title="Solid.js"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/solid"
+                 alt="🚀"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">S</div>
+        </a>
+        <a
+            href="/qwik/"
+            class="framework-card"
+            style="--fw-color: #ac7ef4;"
+            data-framework="qwik"
+            title="Qwik"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/qwik"
+                 alt="⚡"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">Q</div>
+        </a>
+        <a
+            href="/vue/"
+            class="framework-card"
+            style="--fw-color: #4FC08D;"
+            data-framework="vue"
+            title="Vue"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/vuedotjs"
+                 alt="💚"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">V</div>
+        </a>
+        <a
+            href="/vue-vapor/"
+            class="framework-card"
+            style="--fw-color: #42B883;"
+            data-framework="vue-vapor"
+            title="Vue Vapor"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/vuedotjs"
+                 alt="💨"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">V</div>
+        </a>
+        <a
+            href="/jquery/"
+            class="framework-card"
+            style="--fw-color: #0769AD;"
+            data-framework="jquery"
+            title="jQuery"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/jquery"
+                 alt="💙"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">j</div>
+        </a>
+        <a
+            href="/alpine/"
+            class="framework-card"
+            style="--fw-color: #8BC0D0;"
+            data-framework="alpine"
+            title="Alpine.js"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/alpinedotjs"
+                 alt="🏔️"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">A</div>
+        </a>
+        <a
+            href="/lit/"
+            class="framework-card"
+            style="--fw-color: #324fff;"
+            data-framework="lit"
+            title="Lit"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/lit"
+                 alt="🔥"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">L</div>
+        </a>
+        <a
+            href="/vanjs/"
+            class="framework-card"
+            style="--fw-color: #F44336;"
+            data-framework="vanjs"
+            title="VanJS"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/vitess"
+                 alt="🚐"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">V</div>
+        </a>
+        <a
+            href="/astro/"
+            class="framework-card"
+            style="--fw-color: #BC52EE;"
+            data-framework="astro"
+            title="Astro"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/astro"
+                 alt="🚀"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">A</div>
+        </a>
+        <a
+            href="/lume-js/"
+            class="framework-card"
+            style="--fw-color: #7C3AED;"
+            data-framework="lume-js"
+            title="Lume.js"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://pixelflare.cc/alicia/icons/lume.png"
+                 alt="💡"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">L</div>
+        </a>
+        <a
+            href="/octane/"
+            class="framework-card"
+            style="--fw-color: #FF415A;"
+            data-framework="octane"
+            title="Octane"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://octanejs.dev/icon-512.png"
+                 alt="🏎️"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">O</div>
+        </a>
+        <a
+            href="/geajs/"
+            class="framework-card"
+            style="--fw-color: #00e5ff;"
+            data-framework="geajs"
+            title="Gea"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://geajs.com/logo.png"
+                 alt="🌍"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">G</div>
+        </a>
+        <a
+            href="/vanilla/"
+            class="framework-card"
+            style="--fw-color: #F7DF1E;"
+            data-framework="vanilla"
+            title="Vanilla JS"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://cdn.simpleicons.org/javascript"
+                 alt="🧪"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">V</div>
+        </a>
+        <a
+            href="/snapse/"
+            class="framework-card"
+            style="--fw-color: #FF00FF;"
+            data-framework="snapse"
+            title="Snapse"
+        >
+            <img class="framework-icon" 
+                 width="32" 
+                 src="https://snapse.org/snapse.svg"
+                 alt="🫰"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">S</div>
+        </a>
+    </div>
+    
+</section>
+
+<!-- Charts Section -->
+<h2 id="framework-results">Results Summary</h2>
+<section class="charts-section">
+    <!-- Framework Toggle Controls -->
+    <div class="framework-toggles">
+        <div class="toggle-header">
+            <h3>🎛️ Framework Visibility</h3>
+            <div class="toggle-controls">
+                <button id="selectAll" class="toggle-btn">Select All</button>
+                <button id="deselectAll" class="toggle-btn">Deselect All</button>
+            </div>
+        </div>
+        <div class="framework-checkboxes">
+            <label class="framework-checkbox" style="--fw-color: #61DAFB;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-react" 
+                       data-framework="react"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">React</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #DD0031;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-angular" 
+                       data-framework="angular"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Angular</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #ff3e00;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-svelte" 
+                       data-framework="svelte"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Svelte</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #673AB8;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-preact" 
+                       data-framework="preact"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Preact</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #2C4F7C;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-solid" 
+                       data-framework="solid"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Solid.js</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #ac7ef4;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-qwik" 
+                       data-framework="qwik"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Qwik</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #4FC08D;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-vue" 
+                       data-framework="vue"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Vue</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #42B883;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-vue-vapor" 
+                       data-framework="vue-vapor"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Vue Vapor</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #0769AD;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-jquery" 
+                       data-framework="jquery"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">jQuery</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #8BC0D0;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-alpine" 
+                       data-framework="alpine"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Alpine.js</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #324fff;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-lit" 
+                       data-framework="lit"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Lit</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #F44336;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-vanjs" 
+                       data-framework="vanjs"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">VanJS</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #BC52EE;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-astro" 
+                       data-framework="astro"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Astro</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #7C3AED;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-lume-js" 
+                       data-framework="lume-js"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Lume.js</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #FF415A;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-octane" 
+                       data-framework="octane"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Octane</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #00e5ff;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-geajs" 
+                       data-framework="geajs"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Gea</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #F7DF1E;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-vanilla" 
+                       data-framework="vanilla"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Vanilla JS</span>
+            </label>
+            <label class="framework-checkbox" style="--fw-color: #FF00FF;">
+                <input type="checkbox" 
+                       class="framework-toggle" 
+                       id="toggle-snapse" 
+                       data-framework="snapse"
+                       checked>
+                <span class="checkbox-indicator"></span>
+                <span class="framework-label">Snapse</span>
+            </label>
+        </div>
+    </div>
+    
+    <div class="charts-grid">
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="performanceRadar"></canvas></div>
+            <p>Illustrates overall summary, toggle frameworks on/off to view<br>(higher = better)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="performanceQuadrant"></canvas></div>
+            <p>Bundle and Performance Relationship<br>(higher performance = better, lower bundle = better)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="sourceAnalysis"></canvas></div>
+            <p>Source code size and complexity<br>(lower = better)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="bundleSizeComparison"></canvas></div>
+            <p>Total and compressed bundle size<br>(lower size = better)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="lighthouseRadial"></canvas></div>
+            <p>Lighthouse performance scores<br>(higher = better, baseline at 80%)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="loadTimeline"></canvas></div>
+            <p>Loading performance metrics over time<br>(lower times = better)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="resourceConsumption"></canvas></div>
+            <p>CPU and memory usage during testing<br>(lower usage = better)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="buildEfficiencyScatter"></canvas></div>
+            <p>Build time vs bundle size relationship<br>(faster builds + smaller bundles = better)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="projectSizePie"></canvas></div>
+            <p>Distribution of framework bundle sizes<br>(smaller slices = more efficient)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="buildTimeDonut"></canvas></div>
+            <p>Build time distribution across frameworks<br>(smaller slices = faster builds)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="devServerPerformance"></canvas></div>
+            <p>Development server startup and HMR times<br>(shorter bars = better developer experience)</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-outer"><canvas id="productionBuildEfficiency"></canvas></div>
+            <p>Production build time vs output size<br>(bottom-left = optimal: fast builds + small output)</p>
+        </div>
+    </div>
+</section>
+
+<h2 id="framework-stats">Community Stats</h2>
+<section class="framework-stats">
+    <div id="framework-stats-grid"></div>
+</section>
+
+<h2 id="framework-stats">Download Raw Results</h2>
+<section class="raw-results">
+    <p>
+        We run benchmarks every night, using the latest version of each framework.
+        You can access the latest and historic raw results in JSON format,
+        within the <a href="https://github.com/Lissy93/framework-benchmarks/tree/results" target="_blank" rel="noopener" aria-label="Results Branch"><code>results</code></a>
+        branch of our git repo.
+    </p>
+    <h3>Full Results</h3>
+    <p>
+        These files include the raw numbers and benchmark data for all frameworks and tests. The files may be large.
+    </p>
+    <a class="primary-cta" href="https://github.com/Lissy93/framework-benchmarks/tree/results/raw" target="_blank" rel="noopener" style="width: fit-content;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Get Full Data
+    </a>
+    <br>
+
+    <h3>Summary TSV</h3>
+    <iframe frameborder="0" scrolling="no" style="width:100%; height:352px;" allow="clipboard-write" src="https://github-embed.as93.net/iframe.html?target=https%3A%2F%2Fgithub.com%2FLissy93%2Fframework-benchmarks%2Fblob%2Fresults%2Fsummary%2Fsummary.tsv&style=atom-one-light&type=code&showBorder=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+
+    <h3>Repo Stats</h3>
+    <iframe frameborder="0" scrolling="yes" style="width:100%; height:300px;" allow="clipboard-write" src="https://github-embed.as93.net/iframe.html?target=https%3A%2F%2Fgithub.com%2FLissy93%2Fframework-benchmarks%2Fblob%2Fresults%2Fstats%2Fframework-stats.json&style=atom-one-light&type=code&showBorder=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+</section>
+
+<h2 id="framework-apps">Try the Framework Comparison Tool</h2>
+<section id="compare-app-container">
+    <div class="compare-info">
+        <h3>
+            <img width="24" src="https://raw.githubusercontent.com/Lissy93/stack-match/refs/heads/main/static/android-chrome-192x192.png" alt="Stack Match Logo" />
+            Stack Match
+        </h3>
+        <p>
+            Not sure which framework to choose?
+            Use <a href="https://stack-match.as93.net/" target="_blank" rel="noopener">Stack Match</a> to select your preferences
+            and get a tailored recommendation based on the benchmark data.
+        </p>
+        <div class="button-wrap">
+            <a class="primary-cta" href="https://stack-match.as93.net/" target="_blank" rel="noopener">Try Stack Match</a>
+            <a class="secondary-cta" href="https://github.com/lissy93/stack-match" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+        
+    </div>
+    <img
+        class="screenshot"
+        width="400"
+        src="https://github.com/Lissy93/stack-match/blob/main/static/screenshots/compare.png?raw=true"
+        alt="Stack Match Screenshot"
+        class="compare-screenshot"
+        loading="lazy"
+    />
+</section>
+
+
+<h2 id="framework-apps">Frameworks</h2>
+<section class="frameworks-grid">
+    <div class="grid">
+        <a href="/react/" class="framework-card" style="--fw-color: #61DAFB;" data-framework="react">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/react"
+                 alt="⚛️"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">R</div>
+            <div class="framework-name">React</div>
+        </a>
+        <a href="/angular/" class="framework-card" style="--fw-color: #DD0031;" data-framework="angular">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/angular"
+                 alt="🅰️"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">A</div>
+            <div class="framework-name">Angular</div>
+        </a>
+        <a href="/svelte/" class="framework-card" style="--fw-color: #ff3e00;" data-framework="svelte">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/svelte"
+                 alt="🔥"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">S</div>
+            <div class="framework-name">Svelte</div>
+        </a>
+        <a href="/preact/" class="framework-card" style="--fw-color: #673AB8;" data-framework="preact">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/preact"
+                 alt="💜"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">P</div>
+            <div class="framework-name">Preact</div>
+        </a>
+        <a href="/solid/" class="framework-card" style="--fw-color: #2C4F7C;" data-framework="solid">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/solid"
+                 alt="🚀"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">S</div>
+            <div class="framework-name">Solid.js</div>
+        </a>
+        <a href="/qwik/" class="framework-card" style="--fw-color: #ac7ef4;" data-framework="qwik">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/qwik"
+                 alt="⚡"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">Q</div>
+            <div class="framework-name">Qwik</div>
+        </a>
+        <a href="/vue/" class="framework-card" style="--fw-color: #4FC08D;" data-framework="vue">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/vuedotjs"
+                 alt="💚"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">V</div>
+            <div class="framework-name">Vue</div>
+        </a>
+        <a href="/vue-vapor/" class="framework-card" style="--fw-color: #42B883;" data-framework="vue-vapor">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/vuedotjs"
+                 alt="💨"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">V</div>
+            <div class="framework-name">Vue Vapor</div>
+        </a>
+        <a href="/jquery/" class="framework-card" style="--fw-color: #0769AD;" data-framework="jquery">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/jquery"
+                 alt="💙"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">j</div>
+            <div class="framework-name">jQuery</div>
+        </a>
+        <a href="/alpine/" class="framework-card" style="--fw-color: #8BC0D0;" data-framework="alpine">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/alpinedotjs"
+                 alt="🏔️"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">A</div>
+            <div class="framework-name">Alpine.js</div>
+        </a>
+        <a href="/lit/" class="framework-card" style="--fw-color: #324fff;" data-framework="lit">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/lit"
+                 alt="🔥"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">L</div>
+            <div class="framework-name">Lit</div>
+        </a>
+        <a href="/vanjs/" class="framework-card" style="--fw-color: #F44336;" data-framework="vanjs">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/vitess"
+                 alt="🚐"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">V</div>
+            <div class="framework-name">VanJS</div>
+        </a>
+        <a href="/astro/" class="framework-card" style="--fw-color: #BC52EE;" data-framework="astro">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/astro"
+                 alt="🚀"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">A</div>
+            <div class="framework-name">Astro</div>
+        </a>
+        <a href="/lume-js/" class="framework-card" style="--fw-color: #7C3AED;" data-framework="lume-js">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://pixelflare.cc/alicia/icons/lume.png"
+                 alt="💡"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">L</div>
+            <div class="framework-name">Lume.js</div>
+        </a>
+        <a href="/octane/" class="framework-card" style="--fw-color: #FF415A;" data-framework="octane">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://octanejs.dev/icon-512.png"
+                 alt="🏎️"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">O</div>
+            <div class="framework-name">Octane</div>
+        </a>
+        <a href="/geajs/" class="framework-card" style="--fw-color: #00e5ff;" data-framework="geajs">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://geajs.com/logo.png"
+                 alt="🌍"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">G</div>
+            <div class="framework-name">Gea</div>
+        </a>
+        <a href="/vanilla/" class="framework-card" style="--fw-color: #F7DF1E;" data-framework="vanilla">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://cdn.simpleicons.org/javascript"
+                 alt="🧪"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">V</div>
+            <div class="framework-name">Vanilla JS</div>
+        </a>
+        <a href="/snapse/" class="framework-card" style="--fw-color: #FF00FF;" data-framework="snapse">
+            <img class="framework-icon" 
+                 width="64" 
+                 src="https://snapse.org/snapse.svg"
+                 alt="🫰"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="framework-fallback" style="display: none;">S</div>
+            <div class="framework-name">Snapse</div>
+        </a>
+    </div>
+</section>
+
+<!-- <section class="info-section">
+    <h3>📊 Performance Testing URLs</h3>
+    <p>Use these URLs for automated performance testing:</p>
+    <ul class="url-list">
+        <li style="--fw-color: #61DAFB;">
+            <h4>React</h4>
+            <code>http://localhost:3000/react/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #DD0031;">
+            <h4>Angular</h4>
+            <code>http://localhost:3000/angular/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #ff3e00;">
+            <h4>Svelte</h4>
+            <code>http://localhost:3000/svelte/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #673AB8;">
+            <h4>Preact</h4>
+            <code>http://localhost:3000/preact/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #2C4F7C;">
+            <h4>Solid.js</h4>
+            <code>http://localhost:3000/solid/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #ac7ef4;">
+            <h4>Qwik</h4>
+            <code>http://localhost:3000/qwik/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #4FC08D;">
+            <h4>Vue</h4>
+            <code>http://localhost:3000/vue/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #42B883;">
+            <h4>Vue Vapor</h4>
+            <code>http://localhost:3000/vue-vapor/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #0769AD;">
+            <h4>jQuery</h4>
+            <code>http://localhost:3000/jquery/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #8BC0D0;">
+            <h4>Alpine.js</h4>
+            <code>http://localhost:3000/alpine/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #324fff;">
+            <h4>Lit</h4>
+            <code>http://localhost:3000/lit/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #F44336;">
+            <h4>VanJS</h4>
+            <code>http://localhost:3000/vanjs/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #BC52EE;">
+            <h4>Astro</h4>
+            <code>http://localhost:3000/astro/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #7C3AED;">
+            <h4>Lume.js</h4>
+            <code>http://localhost:3000/lume-js/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #FF415A;">
+            <h4>Octane</h4>
+            <code>http://localhost:3000/octane/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #00e5ff;">
+            <h4>Gea</h4>
+            <code>http://localhost:3000/geajs/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #F7DF1E;">
+            <h4>Vanilla JS</h4>
+            <code>http://localhost:3000/vanilla/app?mock=true</code>
+        </li>
+        <li style="--fw-color: #FF00FF;">
+            <h4>Snapse</h4>
+            <code>http://localhost:3000/snapse/app?mock=true</code>
+        </li>
+    </ul>
+    <a href="/health" class="health-link">🔍 View Server Health Check</a>
+</section> -->
+
+</div>
+    </main>
+    
+    <footer>
+        <i>Free and open source, forever</i>
+        <p>
+            <a href="https://github.com/lissy93/framework-benchmarks">lissy93/framework-benchmarks</a>
+            is licensed under
+            <a href="https://github.com/lissy93/framework-benchmarks/blob/main/LICENSE">MIT</a>
+             • &copy; 2025 <a href="https://aliciasykes.com">Alicia Sykes</a>
+        </p>
+    </footer>
+
+    <!-- Navigation JavaScript -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileToggle && navLinks) {
+            mobileToggle.addEventListener('click', function() {
+                const isOpen = navLinks.classList.toggle('open');
+                mobileToggle.setAttribute('aria-expanded', isOpen);
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.navigation')) {
+                    navLinks.classList.remove('open');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Close mobile menu on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.focus();
+                }
+            });
+        }
+
+        // Dropdown menu
+        const dropdown = document.querySelector('.nav-dropdown');
+        const dropdownToggle = dropdown?.querySelector('.dropdown-toggle');
+
+        if (dropdown && dropdownToggle) {
+            dropdownToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const isOpen = dropdown.classList.toggle('open');
+                dropdownToggle.setAttribute('aria-expanded', isOpen);
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.nav-dropdown')) {
+                    dropdown.classList.remove('open');
+                    dropdownToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Close dropdown on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && dropdown.classList.contains('open')) {
+                    dropdown.classList.remove('open');
+                    dropdownToggle.setAttribute('aria-expanded', 'false');
+                    dropdownToggle.focus();
+                }
+            });
+
+            // Keyboard navigation for dropdown items
+            const dropdownItems = dropdown.querySelectorAll('.dropdown-item');
+            dropdownItems.forEach((item, index) => {
+                item.addEventListener('keydown', function(e) {
+                    if (e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        const nextItem = dropdownItems[index + 1] || dropdownItems[0];
+                        nextItem.focus();
+                    } else if (e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        const prevItem = dropdownItems[index - 1] || dropdownItems[dropdownItems.length - 1];
+                        prevItem.focus();
+                    }
+                });
+            });
+        }
+    })();
+    </script>
+
+    <!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ag-grid-community@32/dist/ag-grid-community.min.js"></script>
+<script src="static/js/charts.js"></script>
+<script src="static/js/framework-table.js"></script>
+
+<script>
+// Chart configurations loaded from server
+const chartConfigs = {"build_efficiency_scatter": {"data": {"datasets": [{"backgroundColor": "rgba(139, 195, 74, 0.8)", "borderColor": "rgba(139, 195, 74, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.0, "bundleSize": 5.041015625, "compression": 3.19, "r": 9.57, "x": 0.0, "y": 5.041015625}], "label": "Alpine"}, {"backgroundColor": "rgba(221, 0, 49, 0.8)", "borderColor": "rgba(221, 0, 49, 1.0)", "borderWidth": 2, "data": [{"buildTime": 2.4455, "bundleSize": 50.224609375, "compression": 3.08, "r": 9.24, "x": 2.4455, "y": 50.224609375}], "label": "Angular"}, {"backgroundColor": "rgba(188, 82, 238, 0.8)", "borderColor": "rgba(188, 82, 238, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.7075, "bundleSize": 3.724609375, "compression": 3.01, "r": 9.03, "x": 0.7075, "y": 3.724609375}], "label": "Astro"}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.4525, "bundleSize": 9.73046875, "compression": 3.3, "r": 9.899999999999999, "x": 0.4525, "y": 9.73046875}], "label": "Geajs"}, {"backgroundColor": "rgba(7, 105, 173, 0.8)", "borderColor": "rgba(7, 105, 173, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.5585, "bundleSize": 33.908203125, "compression": 2.88, "r": 8.64, "x": 0.5585, "y": 33.908203125}], "label": "Jquery"}, {"backgroundColor": "rgba(50, 79, 255, 0.8)", "borderColor": "rgba(50, 79, 255, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.4075, "bundleSize": 15.3505859375, "compression": 3.8, "r": 11.399999999999999, "x": 0.4075, "y": 15.3505859375}], "label": "Lit"}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.0, "bundleSize": 5.443359375, "compression": 2.96, "r": 8.879999999999999, "x": 0.0, "y": 5.443359375}], "label": "Lume-Js"}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"buildTime": 1.0705, "bundleSize": 45.50390625, "compression": 3.18, "r": 9.540000000000001, "x": 1.0705, "y": 45.50390625}], "label": "Octane"}, {"backgroundColor": "rgba(103, 58, 184, 0.8)", "borderColor": "rgba(103, 58, 184, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.4, "bundleSize": 9.8515625, "compression": 2.74, "r": 8.22, "x": 0.4, "y": 9.8515625}], "label": "Preact"}, {"backgroundColor": "rgba(172, 126, 244, 0.8)", "borderColor": "rgba(172, 126, 244, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.6, "bundleSize": 33.81640625, "compression": 2.63, "r": 7.89, "x": 0.6, "y": 33.81640625}], "label": "Qwik"}, {"backgroundColor": "rgba(97, 218, 251, 0.8)", "borderColor": "rgba(97, 218, 251, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.605, "bundleSize": 49.078125, "compression": 3.15, "r": 9.45, "x": 0.605, "y": 49.078125}], "label": "React"}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.457, "bundleSize": 14.2685546875, "compression": 2.51, "r": 7.529999999999999, "x": 0.457, "y": 14.2685546875}], "label": "Snapse"}, {"backgroundColor": "rgba(44, 79, 124, 0.8)", "borderColor": "rgba(44, 79, 124, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.5555, "bundleSize": 9.0263671875, "compression": 2.86, "r": 8.58, "x": 0.5555, "y": 9.0263671875}], "label": "Solid"}, {"backgroundColor": "rgba(255, 62, 0, 0.8)", "borderColor": "rgba(255, 62, 0, 1.0)", "borderWidth": 2, "data": [{"buildTime": 1.298, "bundleSize": 37.70703125, "compression": 3.05, "r": 9.149999999999999, "x": 1.298, "y": 37.70703125}], "label": "Svelte"}, {"backgroundColor": "rgba(247, 223, 30, 0.8)", "borderColor": "rgba(247, 223, 30, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.0, "bundleSize": 5.3515625, "compression": 3.8, "r": 11.399999999999999, "x": 0.0, "y": 5.3515625}], "label": "Vanilla"}, {"backgroundColor": "rgba(255, 107, 53, 0.8)", "borderColor": "rgba(255, 107, 53, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.369, "bundleSize": 5.8583984375, "compression": 2.87, "r": 8.61, "x": 0.369, "y": 5.8583984375}], "label": "Vanjs"}, {"backgroundColor": "rgba(79, 192, 141, 0.8)", "borderColor": "rgba(79, 192, 141, 1.0)", "borderWidth": 2, "data": [{"buildTime": 0.6215, "bundleSize": 28.6611328125, "compression": 2.61, "r": 7.83, "x": 0.6215, "y": 28.6611328125}], "label": "Vue"}]}, "options": {"interaction": {"intersect": false, "mode": "point"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"boxHeight": 8, "boxWidth": 8, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "pointStyle": "circle", "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Build Efficiency: Time vs Bundle Size"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"x": {"grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "position": "bottom", "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Build Time (seconds)"}, "type": "linear"}, "y": {"grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Bundle Size (KB, gzipped)"}, "type": "linear"}}}, "type": "scatter"}, "build_time_donut": {"data": {"datasets": [{"backgroundColor": ["rgba(221, 0, 49, 0.8)", "rgba(188, 82, 238, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(7, 105, 173, 0.8)", "rgba(50, 79, 255, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(103, 58, 184, 0.8)", "rgba(172, 126, 244, 0.8)", "rgba(97, 218, 251, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(44, 79, 124, 0.8)", "rgba(255, 62, 0, 0.8)", "rgba(255, 107, 53, 0.8)", "rgba(79, 192, 141, 0.8)"], "borderColor": ["rgba(221, 0, 49, 1.0)", "rgba(188, 82, 238, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 2, "cutout": "50%", "data": [2.4455, 0.7075, 0.4525, 0.5585, 0.4075, 1.0705, 0.4, 0.6, 0.605, 0.457, 0.5555, 1.298, 0.369, 0.6215]}], "labels": ["Angular", "Astro", "Geajs", "Jquery", "Lit", "Octane", "Preact", "Qwik", "React", "Snapse", "Solid", "Svelte", "Vanjs", "Vue"]}, "options": {"interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Build Time Distribution (seconds)"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {}}, "type": "doughnut"}, "bundle_size_comparison": {"data": {"datasets": [{"backgroundColor": ["rgba(139, 195, 74, 0.6)", "rgba(221, 0, 49, 0.6)", "rgba(188, 82, 238, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(7, 105, 173, 0.6)", "rgba(50, 79, 255, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(103, 58, 184, 0.6)", "rgba(172, 126, 244, 0.6)", "rgba(97, 218, 251, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(44, 79, 124, 0.6)", "rgba(255, 62, 0, 0.6)", "rgba(247, 223, 30, 0.6)", "rgba(255, 107, 53, 0.6)", "rgba(79, 192, 141, 0.6)"], "borderColor": ["rgba(139, 195, 74, 1.0)", "rgba(221, 0, 49, 1.0)", "rgba(188, 82, 238, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(247, 223, 30, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 2, "data": [16.060546875, 154.923828125, 11.2060546875, 32.1103515625, 97.6650390625, 58.40625, 16.1083984375, 144.7568359375, 26.974609375, 89.021484375, 154.822265625, 35.8759765625, 25.837890625, 114.912109375, 20.318359375, 16.8076171875, 74.7900390625], "label": "Total Size (KB)", "yAxisID": "y"}, {"backgroundColor": ["rgba(139, 195, 74, 0.8)", "rgba(221, 0, 49, 0.8)", "rgba(188, 82, 238, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(7, 105, 173, 0.8)", "rgba(50, 79, 255, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(103, 58, 184, 0.8)", "rgba(172, 126, 244, 0.8)", "rgba(97, 218, 251, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(44, 79, 124, 0.8)", "rgba(255, 62, 0, 0.8)", "rgba(247, 223, 30, 0.8)", "rgba(255, 107, 53, 0.8)", "rgba(79, 192, 141, 0.8)"], "borderColor": ["rgba(139, 195, 74, 1.0)", "rgba(221, 0, 49, 1.0)", "rgba(188, 82, 238, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(247, 223, 30, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 2, "data": [5.041015625, 50.224609375, 3.724609375, 9.73046875, 33.908203125, 15.3505859375, 5.443359375, 45.50390625, 9.8515625, 33.81640625, 49.078125, 14.2685546875, 9.0263671875, 37.70703125, 5.3515625, 5.8583984375, 28.6611328125], "label": "Gzipped Size (KB)", "yAxisID": "y"}, {"backgroundColor": "rgba(99, 102, 241, 0.1)", "borderColor": "rgba(99, 102, 241, 1)", "borderWidth": 3, "data": [3.19, 3.08, 3.01, 3.3, 2.88, 3.8, 2.96, 3.18, 2.74, 2.63, 3.15, 2.51, 2.86, 3.05, 3.8, 2.87, 2.61], "fill": false, "label": "Compression Ratio", "tension": 0.1, "type": "line", "yAxisID": "y1"}], "labels": ["Alpine", "Angular", "Astro", "Geajs", "Jquery", "Lit", "Lume-Js", "Octane", "Preact", "Qwik", "React", "Snapse", "Solid", "Svelte", "Vanilla", "Vanjs", "Vue"]}, "options": {"interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Bundle Size and Comparison"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"x": {"grid": {"display": false}, "ticks": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}, "type": "category"}, "y": {"beginAtZero": true, "grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "ticks": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Bundle Size (KB)"}, "type": "linear"}, "y1": {"grid": {"drawOnChartArea": false}, "position": "right", "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Compression Ratio"}, "type": "linear"}}}, "type": "bar"}, "dev_server_performance": {"data": {"datasets": [{"backgroundColor": ["rgba(221, 0, 49, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(7, 105, 173, 0.8)", "rgba(50, 79, 255, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(103, 58, 184, 0.8)", "rgba(172, 126, 244, 0.8)", "rgba(97, 218, 251, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(44, 79, 124, 0.8)", "rgba(255, 62, 0, 0.8)", "rgba(255, 107, 53, 0.8)", "rgba(79, 192, 141, 0.8)"], "borderColor": ["rgba(221, 0, 49, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 1, "data": [1637, 1029, 1041, 1034.5, 1035, 1038.5, 1044.5, 1043.5, 1037, 1036.5, 1248, 1035, 1037.5], "label": "Startup Time (ms)"}, {"backgroundColor": ["rgba(221, 0, 49, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(7, 105, 173, 0.6)", "rgba(50, 79, 255, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(103, 58, 184, 0.6)", "rgba(172, 126, 244, 0.6)", "rgba(97, 218, 251, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(44, 79, 124, 0.6)", "rgba(255, 62, 0, 0.6)", "rgba(255, 107, 53, 0.6)", "rgba(79, 192, 141, 0.6)"], "borderColor": ["rgba(221, 0, 49, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 1, "data": [114, 113.5, 116.5, 114.5, 114, 117, 115, 114.5, 125, 113, 129, 116, 122.5], "label": "HMR Time (ms)"}], "labels": ["Angular", "Geajs", "Jquery", "Lit", "Octane", "Preact", "Qwik", "React", "Snapse", "Solid", "Svelte", "Vanjs", "Vue"]}, "options": {"indexAxis": "y", "interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"size": 16}, "text": "Development Server Performance"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"x": {"beginAtZero": true, "grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "ticks": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}, "title": {"display": true, "text": "Time (milliseconds)"}, "type": "linear"}, "y": {"grid": {"display": false}, "ticks": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}, "title": {"display": true, "text": "Framework"}, "type": "category"}}}, "type": "bar"}, "lighthouse_radial": {"data": {"datasets": [{"backgroundColor": ["rgba(139, 195, 74, 0.8)", "rgba(221, 0, 49, 0.8)", "rgba(188, 82, 238, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(7, 105, 173, 0.8)", "rgba(50, 79, 255, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(103, 58, 184, 0.8)", "rgba(172, 126, 244, 0.8)", "rgba(97, 218, 251, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(44, 79, 124, 0.8)", "rgba(255, 62, 0, 0.8)", "rgba(247, 223, 30, 0.8)", "rgba(255, 107, 53, 0.8)", "rgba(79, 192, 141, 0.8)"], "borderColor": ["rgba(139, 195, 74, 1.0)", "rgba(221, 0, 49, 1.0)", "rgba(188, 82, 238, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(247, 223, 30, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 2, "data": [99, 97, 100, 99, 92, 99, 100, 97, 100, 99, 97, 100, 100, 98.5, 94, 100, 99], "label": "Performance"}], "labels": ["Alpine", "Angular", "Astro", "Geajs", "Jquery", "Lit", "Lume-Js", "Octane", "Preact", "Qwik", "React", "Snapse", "Solid", "Svelte", "Vanilla", "Vanjs", "Vue"]}, "options": {"interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Lighthouse Performance Scores"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"r": {"beginAtZero": false, "max": 100, "min": 80, "ticks": {"stepSize": 5}}}}, "type": "polarArea"}, "load_timeline": {"data": {"datasets": [{"backgroundColor": "rgba(97, 218, 251, 0.3)", "borderColor": "rgba(97, 218, 251, 1.0)", "borderWidth": 3, "data": [1205.54, 1204.41, 1205.54, 1225.69, 1307.42, 1354.65, 1355.1, 1359.44, 1534.46, 1392.45, 1536.4, 1654.38, 1657.21, 1983.12, 1954.62, 1953.98, 1988.38], "fill": false, "label": "FCP", "tension": 0.1}, {"backgroundColor": "rgba(221, 0, 49, 0.3)", "borderColor": "rgba(221, 0, 49, 1.0)", "borderWidth": 3, "data": [1386.32, 1504.41, 1692.24, 1519.59, 1534.39, 1656.97, 1657.65, 1988.04, 1686.94, 2116.54, 1838.6, 1841.07, 2033.24, 1983.12, 2256.93, 2290.97, 2257.32], "fill": false, "label": "LCP", "tension": 0.1}, {"backgroundColor": "rgba(79, 192, 141, 0.3)", "borderColor": "rgba(79, 192, 141, 1.0)", "borderWidth": 3, "data": [1205.54, 1204.41, 1205.54, 1225.69, 1307.42, 1354.65, 1355.1, 1359.44, 1534.46, 1392.45, 1536.4, 1654.38, 1657.21, 1983.12, 1954.62, 1953.98, 1988.38], "fill": false, "label": "Speed Index", "tension": 0.1}, {"backgroundColor": "rgba(255, 62, 0, 0.3)", "borderColor": "rgba(255, 62, 0, 1.0)", "borderWidth": 3, "data": [0.1, 0.2, 0.3, 145.9, 0.1, 0.1, 0.1, 0.2, 0.1, 0.1, 55.800000000000004, 0.1, 0, 145.9, 0.1, 0.1, 0.2], "fill": false, "label": "CLS", "tension": 0.1}], "labels": ["Vanjs", "Astro", "Lume-Js", "Vanilla", "Solid", "Preact", "Snapse", "Alpine", "Geajs", "Qwik", "Lit", "Vue", "Svelte", "Jquery", "React", "Angular", "Octane"]}, "options": {"interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Loading Performance"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"x": {"grid": {"display": false}, "ticks": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}, "type": "category"}, "y": {"beginAtZero": true, "grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "ticks": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Time (ms) / CLS (x1000)"}, "type": "linear"}}}, "type": "line"}, "performance_quadrant": {"data": {"datasets": [{"backgroundColor": "rgba(139, 195, 74, 0.8)", "borderColor": "rgba(139, 195, 74, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 5.041015625, "performance": 99, "x": 5.041015625, "y": 99}], "label": "Alpine", "pointRadius": 8}, {"backgroundColor": "rgba(221, 0, 49, 0.8)", "borderColor": "rgba(221, 0, 49, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 50.224609375, "performance": 97, "x": 50.224609375, "y": 97}], "label": "Angular", "pointRadius": 8}, {"backgroundColor": "rgba(188, 82, 238, 0.8)", "borderColor": "rgba(188, 82, 238, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 3.724609375, "performance": 100, "x": 3.724609375, "y": 100}], "label": "Astro", "pointRadius": 8}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 9.73046875, "performance": 99, "x": 9.73046875, "y": 99}], "label": "Geajs", "pointRadius": 8}, {"backgroundColor": "rgba(7, 105, 173, 0.8)", "borderColor": "rgba(7, 105, 173, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 33.908203125, "performance": 92, "x": 33.908203125, "y": 92}], "label": "Jquery", "pointRadius": 8}, {"backgroundColor": "rgba(50, 79, 255, 0.8)", "borderColor": "rgba(50, 79, 255, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 15.3505859375, "performance": 99, "x": 15.3505859375, "y": 99}], "label": "Lit", "pointRadius": 8}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 5.443359375, "performance": 100, "x": 5.443359375, "y": 100}], "label": "Lume-Js", "pointRadius": 8}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 45.50390625, "performance": 97, "x": 45.50390625, "y": 97}], "label": "Octane", "pointRadius": 8}, {"backgroundColor": "rgba(103, 58, 184, 0.8)", "borderColor": "rgba(103, 58, 184, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 9.8515625, "performance": 100, "x": 9.8515625, "y": 100}], "label": "Preact", "pointRadius": 8}, {"backgroundColor": "rgba(172, 126, 244, 0.8)", "borderColor": "rgba(172, 126, 244, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 33.81640625, "performance": 99, "x": 33.81640625, "y": 99}], "label": "Qwik", "pointRadius": 8}, {"backgroundColor": "rgba(97, 218, 251, 0.8)", "borderColor": "rgba(97, 218, 251, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 49.078125, "performance": 97, "x": 49.078125, "y": 97}], "label": "React", "pointRadius": 8}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 14.2685546875, "performance": 100, "x": 14.2685546875, "y": 100}], "label": "Snapse", "pointRadius": 8}, {"backgroundColor": "rgba(44, 79, 124, 0.8)", "borderColor": "rgba(44, 79, 124, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 9.0263671875, "performance": 100, "x": 9.0263671875, "y": 100}], "label": "Solid", "pointRadius": 8}, {"backgroundColor": "rgba(255, 62, 0, 0.8)", "borderColor": "rgba(255, 62, 0, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 37.70703125, "performance": 98.5, "x": 37.70703125, "y": 98.5}], "label": "Svelte", "pointRadius": 8}, {"backgroundColor": "rgba(247, 223, 30, 0.8)", "borderColor": "rgba(247, 223, 30, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 5.3515625, "performance": 94, "x": 5.3515625, "y": 94}], "label": "Vanilla", "pointRadius": 8}, {"backgroundColor": "rgba(255, 107, 53, 0.8)", "borderColor": "rgba(255, 107, 53, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 5.8583984375, "performance": 100, "x": 5.8583984375, "y": 100}], "label": "Vanjs", "pointRadius": 8}, {"backgroundColor": "rgba(79, 192, 141, 0.8)", "borderColor": "rgba(79, 192, 141, 1.0)", "borderWidth": 2, "data": [{"bundleSize": 28.6611328125, "performance": 99, "x": 28.6611328125, "y": 99}], "label": "Vue", "pointRadius": 8}]}, "options": {"interaction": {"intersect": false, "mode": "point"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"annotation": {"annotations": {"hline": {"borderColor": "rgba(0, 0, 0, 0.3)", "borderDash": [5, 5], "borderWidth": 2, "type": "line", "yMax": 80, "yMin": 80}, "vline": {"borderColor": "rgba(0, 0, 0, 0.3)", "borderDash": [5, 5], "borderWidth": 2, "type": "line", "xMax": 100, "xMin": 100}}}, "legend": {"display": true, "labels": {"boxHeight": 8, "boxWidth": 8, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "pointStyle": "circle", "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Performance vs Bundle Size"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"x": {"grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "position": "bottom", "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Bundle Size (KB, gzipped)"}, "type": "linear"}, "y": {"grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "max": 100, "min": 87, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Performance Score"}, "type": "linear"}}}, "type": "scatter"}, "performance_radar": {"data": {"datasets": [{"backgroundColor": "rgba(139, 195, 74, 0.3)", "borderColor": "rgba(139, 195, 74, 1.0)", "borderWidth": 2, "data": [99, 100, 100, 72.8112, 1.502322461429422, 48.6195], "label": "Alpine", "pointBackgroundColor": "rgba(139, 195, 74, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(221, 0, 49, 0.3)", "borderColor": "rgba(221, 0, 49, 1.0)", "borderWidth": 2, "data": [97, 19.910558040054443, 97.5545, 60.9204, 70.86734758451357, 48.947500000000005], "label": "Angular", "pointBackgroundColor": "rgba(221, 0, 49, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(188, 82, 238, 0.3)", "borderColor": "rgba(188, 82, 238, 1.0)", "borderWidth": 2, "data": [100, 100, 99.2925, 75.9118, 11.098454645555684, 50.089], "label": "Astro", "pointBackgroundColor": "rgba(188, 82, 238, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(102, 102, 102, 0.3)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [99, 100, 99.5475, 69.3108, 76.85891837845364, 50.2205], "label": "Geajs", "pointBackgroundColor": "rgba(102, 102, 102, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(7, 105, 173, 0.3)", "borderColor": "rgba(7, 105, 173, 1.0)", "borderWidth": 2, "data": [92, 29.491388744887963, 99.4415, 60.3376, 1.9883307387578957, 49.8155], "label": "Jquery", "pointBackgroundColor": "rgba(7, 105, 173, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(50, 79, 255, 0.3)", "borderColor": "rgba(50, 79, 255, 1.0)", "borderWidth": 2, "data": [99, 65.14409313569566, 99.5925, 69.27199999999999, 22.245003860221995, 50.231], "label": "Lit", "pointBackgroundColor": "rgba(50, 79, 255, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(102, 102, 102, 0.3)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [100, 100, 100, 75.8892, 10.528913695561378, 50.311], "label": "Lume-Js", "pointBackgroundColor": "rgba(102, 102, 102, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(102, 102, 102, 0.3)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [97, 21.97613529058288, 98.9295, 60.2324, 64.31129842680134, 50.0555], "label": "Octane", "pointBackgroundColor": "rgba(102, 102, 102, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(103, 58, 184, 0.3)", "borderColor": "rgba(103, 58, 184, 1.0)", "borderWidth": 2, "data": [100, 100, 99.6, 72.907, 65.06815506701598, 50.3275], "label": "Preact", "pointBackgroundColor": "rgba(103, 58, 184, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(172, 126, 244, 0.3)", "borderColor": "rgba(172, 126, 244, 1.0)", "borderWidth": 2, "data": [99, 29.571445073351047, 99.4, 72.151, 100.0, 48.408], "label": "Qwik", "pointBackgroundColor": "rgba(172, 126, 244, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(97, 218, 251, 0.3)", "borderColor": "rgba(97, 218, 251, 1.0)", "borderWidth": 2, "data": [97, 20.37567653613499, 99.395, 60.9076, 71.25590107706523, 50.1705], "label": "React", "pointBackgroundColor": "rgba(97, 218, 251, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(102, 102, 102, 0.3)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [100, 70.08418314968175, 99.543, 72.898, 83.7263165888294, 50.382], "label": "Snapse", "pointBackgroundColor": "rgba(102, 102, 102, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(44, 79, 124, 0.3)", "borderColor": "rgba(44, 79, 124, 1.0)", "borderWidth": 2, "data": [100, 100, 99.4445, 73.85159999999999, 64.5163331687993, 50.347], "label": "Solid", "pointBackgroundColor": "rgba(44, 79, 124, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(255, 62, 0, 0.3)", "borderColor": "rgba(255, 62, 0, 1.0)", "borderWidth": 2, "data": [98.5, 26.520252771159228, 98.702, 66.8558, 78.35238131399426, 50.195499999999996], "label": "Svelte", "pointBackgroundColor": "rgba(255, 62, 0, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(247, 223, 30, 0.3)", "borderColor": "rgba(247, 223, 30, 1.0)", "borderWidth": 2, "data": [94, 100, 100, 75.4862, 0.0, 50.267], "label": "Vanilla", "pointBackgroundColor": "rgba(247, 223, 30, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(255, 107, 53, 0.3)", "borderColor": "rgba(255, 107, 53, 1.0)", "borderWidth": 2, "data": [100, 100, 99.631, 75.8892, 0.3138803457746395, 50.888999999999996], "label": "Vanjs", "pointBackgroundColor": "rgba(255, 107, 53, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}, {"backgroundColor": "rgba(79, 192, 141, 0.3)", "borderColor": "rgba(79, 192, 141, 1.0)", "borderWidth": 2, "data": [99, 34.89045623360251, 99.3785, 66.91239999999999, 77.80815329511081, 49.9365], "label": "Vue", "pointBackgroundColor": "rgba(79, 192, 141, 1.0)", "pointBorderColor": "#fff", "pointBorderWidth": 2, "pointRadius": 5}], "labels": ["Performance", "Bundle Efficiency", "Build Speed", "FCP Speed", "Maintainability", "Memory Usage"]}, "options": {"interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Performance Overview"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"r": {"beginAtZero": true, "max": 100, "ticks": {"stepSize": 20}}}}, "type": "radar"}, "production_build_efficiency": {"data": {"datasets": [{"backgroundColor": "rgba(221, 0, 49, 0.8)", "borderColor": "rgba(221, 0, 49, 1.0)", "borderWidth": 2, "data": [{"x": 2.4455, "y": 2.32}], "label": "Angular", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(188, 82, 238, 0.8)", "borderColor": "rgba(188, 82, 238, 1.0)", "borderWidth": 2, "data": [{"x": 0.7075, "y": 2.17}], "label": "Astro", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"x": 0.4525, "y": 2.19}], "label": "Geajs", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(7, 105, 173, 0.8)", "borderColor": "rgba(7, 105, 173, 1.0)", "borderWidth": 2, "data": [{"x": 0.5585, "y": 2.26}], "label": "Jquery", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(50, 79, 255, 0.8)", "borderColor": "rgba(50, 79, 255, 1.0)", "borderWidth": 2, "data": [{"x": 0.4075, "y": 2.21}], "label": "Lit", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"x": 1.0705, "y": 2.3}], "label": "Octane", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(103, 58, 184, 0.8)", "borderColor": "rgba(103, 58, 184, 1.0)", "borderWidth": 2, "data": [{"x": 0.4, "y": 2.18}], "label": "Preact", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(172, 126, 244, 0.8)", "borderColor": "rgba(172, 126, 244, 1.0)", "borderWidth": 2, "data": [{"x": 0.6, "y": 2.25}], "label": "Qwik", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(97, 218, 251, 0.8)", "borderColor": "rgba(97, 218, 251, 1.0)", "borderWidth": 2, "data": [{"x": 0.605, "y": 2.31}], "label": "React", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(102, 102, 102, 0.8)", "borderColor": "rgba(102, 102, 102, 1.0)", "borderWidth": 2, "data": [{"x": 0.457, "y": 2.19}], "label": "Snapse", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(44, 79, 124, 0.8)", "borderColor": "rgba(44, 79, 124, 1.0)", "borderWidth": 2, "data": [{"x": 0.5555, "y": 2.18}], "label": "Solid", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(255, 62, 0, 0.8)", "borderColor": "rgba(255, 62, 0, 1.0)", "borderWidth": 2, "data": [{"x": 1.298, "y": 2.27}], "label": "Svelte", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(255, 107, 53, 0.8)", "borderColor": "rgba(255, 107, 53, 1.0)", "borderWidth": 2, "data": [{"x": 0.369, "y": 2.17}], "label": "Vanjs", "pointHoverRadius": 10, "pointRadius": 8}, {"backgroundColor": "rgba(79, 192, 141, 0.8)", "borderColor": "rgba(79, 192, 141, 1.0)", "borderWidth": 2, "data": [{"x": 0.6215, "y": 2.23}], "label": "Vue", "pointHoverRadius": 10, "pointRadius": 8}]}, "options": {"interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"size": 16}, "text": "Production Build Efficiency"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"x": {"grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "position": "bottom", "title": {"display": true, "text": "Build Time (seconds)"}, "type": "linear"}, "y": {"grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "title": {"display": true, "text": "Output Size (MB)"}, "type": "linear"}}}, "type": "scatter"}, "project_size_pie": {"data": {"datasets": [{"backgroundColor": ["rgba(139, 195, 74, 0.8)", "rgba(221, 0, 49, 0.8)", "rgba(188, 82, 238, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(7, 105, 173, 0.8)", "rgba(50, 79, 255, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(103, 58, 184, 0.8)", "rgba(172, 126, 244, 0.8)", "rgba(97, 218, 251, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(44, 79, 124, 0.8)", "rgba(255, 62, 0, 0.8)", "rgba(247, 223, 30, 0.8)", "rgba(255, 107, 53, 0.8)", "rgba(79, 192, 141, 0.8)"], "borderColor": ["rgba(139, 195, 74, 1.0)", "rgba(221, 0, 49, 1.0)", "rgba(188, 82, 238, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(247, 223, 30, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 2, "data": [5.041015625, 50.224609375, 3.724609375, 9.73046875, 33.908203125, 15.3505859375, 5.443359375, 45.50390625, 9.8515625, 33.81640625, 49.078125, 14.2685546875, 9.0263671875, 37.70703125, 5.3515625, 5.8583984375, 28.6611328125]}], "labels": ["Alpine", "Angular", "Astro", "Geajs", "Jquery", "Lit", "Lume-Js", "Octane", "Preact", "Qwik", "React", "Snapse", "Solid", "Svelte", "Vanilla", "Vanjs", "Vue"]}, "options": {"interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Project Size Distribution (Gzipped KB)"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {}}, "type": "pie"}, "resource_consumption": {"data": {"datasets": [{"backgroundColor": ["rgba(139, 195, 74, 0.8)", "rgba(221, 0, 49, 0.8)", "rgba(188, 82, 238, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(7, 105, 173, 0.8)", "rgba(50, 79, 255, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(103, 58, 184, 0.8)", "rgba(172, 126, 244, 0.8)", "rgba(97, 218, 251, 0.8)", "rgba(102, 102, 102, 0.8)", "rgba(44, 79, 124, 0.8)", "rgba(255, 62, 0, 0.8)", "rgba(247, 223, 30, 0.8)", "rgba(255, 107, 53, 0.8)", "rgba(79, 192, 141, 0.8)"], "borderColor": ["rgba(139, 195, 74, 1.0)", "rgba(221, 0, 49, 1.0)", "rgba(188, 82, 238, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(247, 223, 30, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 2, "data": [42.65, 22.99, 21.27, 23.32, 23.67, 23.01, 22.43, 20.31, 20.15, 20.61, 21.13, 20.63, 20.92, 21.42, 21.38, 19.65, 20.31], "label": "Average CPU Usage (%)", "yAxisID": "y"}, {"backgroundColor": ["rgba(139, 195, 74, 0.6)", "rgba(221, 0, 49, 0.6)", "rgba(188, 82, 238, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(7, 105, 173, 0.6)", "rgba(50, 79, 255, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(103, 58, 184, 0.6)", "rgba(172, 126, 244, 0.6)", "rgba(97, 218, 251, 0.6)", "rgba(102, 102, 102, 0.6)", "rgba(44, 79, 124, 0.6)", "rgba(255, 62, 0, 0.6)", "rgba(247, 223, 30, 0.6)", "rgba(255, 107, 53, 0.6)", "rgba(79, 192, 141, 0.6)"], "borderColor": ["rgba(139, 195, 74, 1.0)", "rgba(221, 0, 49, 1.0)", "rgba(188, 82, 238, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(7, 105, 173, 1.0)", "rgba(50, 79, 255, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(103, 58, 184, 1.0)", "rgba(172, 126, 244, 1.0)", "rgba(97, 218, 251, 1.0)", "rgba(102, 102, 102, 1.0)", "rgba(44, 79, 124, 1.0)", "rgba(255, 62, 0, 1.0)", "rgba(247, 223, 30, 1.0)", "rgba(255, 107, 53, 1.0)", "rgba(79, 192, 141, 1.0)"], "borderWidth": 2, "data": [1027.61, 1021.05, 998.22, 995.59, 1003.69, 995.38, 993.78, 998.89, 993.45, 1031.84, 996.59, 992.36, 993.06, 996.09, 994.66, 982.22, 1001.27], "label": "Memory Usage (MB)", "yAxisID": "y1"}], "labels": ["Alpine", "Angular", "Astro", "Geajs", "Jquery", "Lit", "Lume-Js", "Octane", "Preact", "Qwik", "React", "Snapse", "Solid", "Svelte", "Vanilla", "Vanjs", "Vue"]}, "options": {"interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Resource Consumption"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"x": {"grid": {"display": false}, "ticks": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}, "type": "category"}, "y": {"beginAtZero": true, "grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "ticks": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "CPU Usage (%)"}, "type": "linear"}, "y1": {"grid": {"drawOnChartArea": false}, "position": "right", "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Memory (MB)"}, "type": "linear"}}}, "type": "bar"}, "source_analysis": {"data": {"datasets": [{"backgroundColor": "rgba(59, 130, 246, 0.8)", "borderColor": "rgba(59, 130, 246, 1)", "borderWidth": 1, "data": [169, 234, 287, 217, 299, 372, 388, 426, 405, 421, 424, 415, 438, 452, 458, 461, 955], "label": "Logical Lines"}, {"backgroundColor": "rgba(16, 185, 129, 0.8)", "borderColor": "rgba(16, 185, 129, 1)", "borderWidth": 1, "data": [120, 40, 30, 110, 30, 40, 30, 30, 120, 120, 130, 160, 130, 130, 120, 120, 80], "label": "Files Count (\u00d710)"}, {"backgroundColor": "rgba(245, 101, 101, 0.8)", "borderColor": "rgba(245, 101, 101, 1)", "borderWidth": 1, "data": [35, 67, 45, 57, 68, 73, 76, 74, 101, 89, 88, 83, 90, 91, 98, 101, 84], "label": "Cyclomatic Complexity"}], "labels": ["Snapse", "Lume-Js", "Jquery", "Vue", "Alpine", "Astro", "Vanjs", "Vanilla", "Svelte", "Octane", "Angular", "Qwik", "React", "Geajs", "Solid", "Preact", "Lit"]}, "options": {"indexAxis": "y", "interaction": {"intersect": false, "mode": "index"}, "layout": {"padding": {"bottom": 10, "left": 10, "right": 10, "top": 10}}, "maintainAspectRatio": false, "plugins": {"legend": {"display": true, "labels": {"font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 11}, "padding": 20, "usePointStyle": true}, "position": "top"}, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 16}, "text": "Source Code Analysis"}, "tooltip": {"backgroundColor": "rgba(0, 0, 0, 0.8)", "bodyFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}, "cornerRadius": 8, "displayColors": true, "titleFont": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12}}}, "responsive": true, "scales": {"x": {"beginAtZero": true, "grid": {"color": "rgba(0, 0, 0, 0.1)", "drawOnChartArea": true}, "stacked": true, "title": {"display": true, "font": {"family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif", "size": 12, "weight": "bold"}, "text": "Count"}, "type": "linear"}, "y": {"grid": {"display": false}, "stacked": true, "type": "category"}}}, "type": "bar"}};
+
+// Initialize charts when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    initializeCharts(chartConfigs);
+});
+</script>
+</body>
+</html>
