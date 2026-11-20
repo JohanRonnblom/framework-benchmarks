@@ -1,0 +1,381 @@
+{
+  "type": "radar",
+  "data": {
+    "labels": [
+      "Performance",
+      "Bundle Efficiency",
+      "Build Speed",
+      "FCP Speed",
+      "Maintainability",
+      "Memory Usage"
+    ],
+    "datasets": [
+      {
+        "label": "Alpine",
+        "data": [
+          99,
+          100,
+          100,
+          72.8112,
+          1.502322461429422,
+          48.6195
+        ],
+        "backgroundColor": "rgba(139, 195, 74, 0.3)",
+        "borderColor": "rgba(139, 195, 74, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(139, 195, 74, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Angular",
+        "data": [
+          97,
+          19.910558040054443,
+          97.5545,
+          60.9204,
+          70.86734758451357,
+          48.947500000000005
+        ],
+        "backgroundColor": "rgba(221, 0, 49, 0.3)",
+        "borderColor": "rgba(221, 0, 49, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(221, 0, 49, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Astro",
+        "data": [
+          100,
+          100,
+          99.2925,
+          75.9118,
+          11.098454645555684,
+          50.089
+        ],
+        "backgroundColor": "rgba(188, 82, 238, 0.3)",
+        "borderColor": "rgba(188, 82, 238, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(188, 82, 238, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Geajs",
+        "data": [
+          99,
+          100,
+          99.5475,
+          69.3108,
+          76.85891837845364,
+          50.2205
+        ],
+        "backgroundColor": "rgba(102, 102, 102, 0.3)",
+        "borderColor": "rgba(102, 102, 102, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(102, 102, 102, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Jquery",
+        "data": [
+          92,
+          29.491388744887963,
+          99.4415,
+          60.3376,
+          1.9883307387578957,
+          49.8155
+        ],
+        "backgroundColor": "rgba(7, 105, 173, 0.3)",
+        "borderColor": "rgba(7, 105, 173, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(7, 105, 173, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Lit",
+        "data": [
+          99,
+          65.14409313569566,
+          99.5925,
+          69.27199999999999,
+          22.245003860221995,
+          50.231
+        ],
+        "backgroundColor": "rgba(50, 79, 255, 0.3)",
+        "borderColor": "rgba(50, 79, 255, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(50, 79, 255, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Lume-Js",
+        "data": [
+          100,
+          100,
+          100,
+          75.8892,
+          10.528913695561378,
+          50.311
+        ],
+        "backgroundColor": "rgba(102, 102, 102, 0.3)",
+        "borderColor": "rgba(102, 102, 102, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(102, 102, 102, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Octane",
+        "data": [
+          97,
+          21.97613529058288,
+          98.9295,
+          60.2324,
+          64.31129842680134,
+          50.0555
+        ],
+        "backgroundColor": "rgba(102, 102, 102, 0.3)",
+        "borderColor": "rgba(102, 102, 102, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(102, 102, 102, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Preact",
+        "data": [
+          100,
+          100,
+          99.6,
+          72.907,
+          65.06815506701598,
+          50.3275
+        ],
+        "backgroundColor": "rgba(103, 58, 184, 0.3)",
+        "borderColor": "rgba(103, 58, 184, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(103, 58, 184, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Qwik",
+        "data": [
+          99,
+          29.571445073351047,
+          99.4,
+          72.151,
+          100.0,
+          48.408
+        ],
+        "backgroundColor": "rgba(172, 126, 244, 0.3)",
+        "borderColor": "rgba(172, 126, 244, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(172, 126, 244, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "React",
+        "data": [
+          97,
+          20.37567653613499,
+          99.395,
+          60.9076,
+          71.25590107706523,
+          50.1705
+        ],
+        "backgroundColor": "rgba(97, 218, 251, 0.3)",
+        "borderColor": "rgba(97, 218, 251, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(97, 218, 251, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Snapse",
+        "data": [
+          100,
+          70.08418314968175,
+          99.543,
+          72.898,
+          83.7263165888294,
+          50.382
+        ],
+        "backgroundColor": "rgba(102, 102, 102, 0.3)",
+        "borderColor": "rgba(102, 102, 102, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(102, 102, 102, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Solid",
+        "data": [
+          100,
+          100,
+          99.4445,
+          73.85159999999999,
+          64.5163331687993,
+          50.347
+        ],
+        "backgroundColor": "rgba(44, 79, 124, 0.3)",
+        "borderColor": "rgba(44, 79, 124, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(44, 79, 124, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Svelte",
+        "data": [
+          98.5,
+          26.520252771159228,
+          98.702,
+          66.8558,
+          78.35238131399426,
+          50.195499999999996
+        ],
+        "backgroundColor": "rgba(255, 62, 0, 0.3)",
+        "borderColor": "rgba(255, 62, 0, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(255, 62, 0, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Vanilla",
+        "data": [
+          94,
+          100,
+          100,
+          75.4862,
+          0.0,
+          50.267
+        ],
+        "backgroundColor": "rgba(247, 223, 30, 0.3)",
+        "borderColor": "rgba(247, 223, 30, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(247, 223, 30, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Vanjs",
+        "data": [
+          100,
+          100,
+          99.631,
+          75.8892,
+          0.3138803457746395,
+          50.888999999999996
+        ],
+        "backgroundColor": "rgba(255, 107, 53, 0.3)",
+        "borderColor": "rgba(255, 107, 53, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(255, 107, 53, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      },
+      {
+        "label": "Vue",
+        "data": [
+          99,
+          34.89045623360251,
+          99.3785,
+          66.91239999999999,
+          77.80815329511081,
+          49.9365
+        ],
+        "backgroundColor": "rgba(79, 192, 141, 0.3)",
+        "borderColor": "rgba(79, 192, 141, 1.0)",
+        "borderWidth": 2,
+        "pointBackgroundColor": "rgba(79, 192, 141, 1.0)",
+        "pointBorderColor": "#fff",
+        "pointBorderWidth": 2,
+        "pointRadius": 5
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "maintainAspectRatio": false,
+    "interaction": {
+      "intersect": false,
+      "mode": "index"
+    },
+    "plugins": {
+      "legend": {
+        "display": true,
+        "position": "top",
+        "labels": {
+          "font": {
+            "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+            "size": 11
+          },
+          "padding": 20,
+          "usePointStyle": true
+        }
+      },
+      "tooltip": {
+        "backgroundColor": "rgba(0, 0, 0, 0.8)",
+        "titleFont": {
+          "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "size": 12
+        },
+        "bodyFont": {
+          "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "size": 12
+        },
+        "cornerRadius": 8,
+        "displayColors": true
+      },
+      "title": {
+        "display": true,
+        "text": "Performance Overview",
+        "font": {
+          "size": 16,
+          "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+        }
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100,
+        "ticks": {
+          "stepSize": 20
+        }
+      }
+    },
+    "layout": {
+      "padding": {
+        "top": 10,
+        "right": 10,
+        "bottom": 10,
+        "left": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,883 @@
+{
+  "frameworks": {
+    "alpine": {
+      "build_time": {
+        "build_time_ms": 0,
+        "build_time_success": true,
+        "output_size_mb": 0,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.19,
+        "file_count": 3,
+        "js_percentage": 93.34,
+        "total_gzipped": 5162,
+        "total_size": 16446
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 0,
+        "startup_time_ms": 0
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0002,
+          "fcp": 1359.44,
+          "lcp": 1988.04,
+          "speed_index": 1359.44,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 99,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 42.65,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.041,
+        "memory": 1027.61,
+        "memory_delta": 43.35,
+        "peak_cpu": 141.7
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 68,
+        "files_count": 3,
+        "halstead_volume": 13776.09,
+        "logical_lines": 299,
+        "maintainability_index": 83.56,
+        "physical_lines": 444
+      }
+    },
+    "angular": {
+      "build_time": {
+        "build_time_ms": 2445.5,
+        "build_time_success": true,
+        "output_size_mb": 2.32,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.08,
+        "file_count": 1,
+        "js_percentage": 100,
+        "total_gzipped": 51430,
+        "total_size": 158642
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 114,
+        "startup_time_ms": 1637
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1953.98,
+          "lcp": 2290.97,
+          "speed_index": 1953.98,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 97,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 22.99,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.059,
+        "memory": 1021.05,
+        "memory_delta": 70.32,
+        "peak_cpu": 76.7
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 88,
+        "files_count": 13,
+        "halstead_volume": 27036.12,
+        "logical_lines": 424,
+        "maintainability_index": 631.62,
+        "physical_lines": 764
+      }
+    },
+    "astro": {
+      "build_time": {
+        "build_time_ms": 707.5,
+        "build_time_success": true,
+        "output_size_mb": 2.17,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.01,
+        "file_count": 1,
+        "js_percentage": 100,
+        "total_gzipped": 3814,
+        "total_size": 11475
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 0,
+        "startup_time_ms": 0
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0002,
+          "fcp": 1204.41,
+          "lcp": 1504.41,
+          "speed_index": 1204.41,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 100,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 21.27,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.035,
+        "memory": 998.22,
+        "memory_delta": 39.3,
+        "peak_cpu": 58.1
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 73,
+        "files_count": 4,
+        "halstead_volume": 18153.98,
+        "logical_lines": 372,
+        "maintainability_index": 159.38,
+        "physical_lines": 546
+      }
+    },
+    "geajs": {
+      "build_time": {
+        "build_time_ms": 452.5,
+        "build_time_success": true,
+        "output_size_mb": 2.19,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.3,
+        "file_count": 1,
+        "js_percentage": 98.43,
+        "total_gzipped": 9964,
+        "total_size": 32881
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 113.5,
+        "startup_time_ms": 1029
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1534.46,
+          "lcp": 1686.94,
+          "speed_index": 1534.46,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 99,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 23.32,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.034,
+        "memory": 995.59,
+        "memory_delta": 61.05,
+        "peak_cpu": 62.2
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 91,
+        "files_count": 13,
+        "halstead_volume": 24340.98,
+        "logical_lines": 452,
+        "maintainability_index": 678.96,
+        "physical_lines": 713
+      }
+    },
+    "jquery": {
+      "build_time": {
+        "build_time_ms": 558.5,
+        "build_time_success": true,
+        "output_size_mb": 2.26,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 2.88,
+        "file_count": 1,
+        "js_percentage": 99.5,
+        "total_gzipped": 34722,
+        "total_size": 100009
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 116.5,
+        "startup_time_ms": 1041
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.1459,
+          "fcp": 1983.12,
+          "lcp": 1983.12,
+          "speed_index": 1983.12,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 92,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 23.67,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.027,
+        "memory": 1003.69,
+        "memory_delta": 42.66,
+        "peak_cpu": 60
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 45,
+        "files_count": 3,
+        "halstead_volume": 18604.14,
+        "logical_lines": 287,
+        "maintainability_index": 87.4,
+        "physical_lines": 481
+      }
+    },
+    "lit": {
+      "build_time": {
+        "build_time_ms": 407.5,
+        "build_time_success": true,
+        "output_size_mb": 2.21,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.8,
+        "file_count": 1,
+        "js_percentage": 98.81,
+        "total_gzipped": 15719,
+        "total_size": 59808
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 114.5,
+        "startup_time_ms": 1034.5
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0558,
+          "fcp": 1536.4,
+          "lcp": 1838.6,
+          "speed_index": 1536.4,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 96,
+          "best_practices": 100,
+          "performance": 99,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 23.01,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.042,
+        "memory": 995.38,
+        "memory_delta": 41.27,
+        "peak_cpu": 61.7
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 84,
+        "files_count": 8,
+        "halstead_volume": 45970.31,
+        "logical_lines": 955,
+        "maintainability_index": 247.45,
+        "physical_lines": 1300
+      }
+    },
+    "lume-js": {
+      "build_time": {
+        "build_time_ms": 0,
+        "build_time_success": true,
+        "output_size_mb": 0,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 2.96,
+        "file_count": 4,
+        "js_percentage": 95.37,
+        "total_gzipped": 5574,
+        "total_size": 16495
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 0,
+        "startup_time_ms": 0
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0003,
+          "fcp": 1205.54,
+          "lcp": 1692.24,
+          "speed_index": 1205.54,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 100,
+          "seo": 100
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 22.43,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.034,
+        "memory": 993.78,
+        "memory_delta": 49.1,
+        "peak_cpu": 61.1
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 67,
+        "files_count": 4,
+        "halstead_volume": 17543.75,
+        "logical_lines": 234,
+        "maintainability_index": 154.88,
+        "physical_lines": 321
+      }
+    },
+    "octane": {
+      "build_time": {
+        "build_time_ms": 1070.5,
+        "build_time_success": true,
+        "output_size_mb": 2.3,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.18,
+        "file_count": 1,
+        "js_percentage": 100,
+        "total_gzipped": 46596,
+        "total_size": 148231
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 114,
+        "startup_time_ms": 1035
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0002,
+          "fcp": 1988.38,
+          "lcp": 2257.32,
+          "speed_index": 1988.38,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 97,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 20.31,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.03,
+        "memory": 998.89,
+        "memory_delta": 38.68,
+        "peak_cpu": 61.1
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 89,
+        "files_count": 12,
+        "halstead_volume": 24098.68,
+        "logical_lines": 421,
+        "maintainability_index": 579.82,
+        "physical_lines": 741
+      }
+    },
+    "preact": {
+      "build_time": {
+        "build_time_ms": 400,
+        "build_time_success": true,
+        "output_size_mb": 2.18,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 2.74,
+        "file_count": 1,
+        "js_percentage": 100,
+        "total_gzipped": 10088,
+        "total_size": 27622
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 117,
+        "startup_time_ms": 1038.5
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1354.65,
+          "lcp": 1656.97,
+          "speed_index": 1354.65,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 100,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 20.15,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.035,
+        "memory": 993.45,
+        "memory_delta": 49.45,
+        "peak_cpu": 59.4
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 101,
+        "files_count": 12,
+        "halstead_volume": 25344.18,
+        "logical_lines": 461,
+        "maintainability_index": 585.8,
+        "physical_lines": 776
+      }
+    },
+    "qwik": {
+      "build_time": {
+        "build_time_ms": 600,
+        "build_time_success": true,
+        "output_size_mb": 2.25,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 2.63,
+        "file_count": 13,
+        "js_percentage": 100,
+        "total_gzipped": 34628,
+        "total_size": 91158
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 115,
+        "startup_time_ms": 1044.5
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1392.45,
+          "lcp": 2116.54,
+          "speed_index": 1392.45,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 96,
+          "best_practices": 100,
+          "performance": 99,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 20.61,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.03,
+        "memory": 1031.84,
+        "memory_delta": 41.97,
+        "peak_cpu": 64.3
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 83,
+        "files_count": 16,
+        "halstead_volume": 26425.59,
+        "logical_lines": 415,
+        "maintainability_index": 861.8,
+        "physical_lines": 754
+      }
+    },
+    "react": {
+      "build_time": {
+        "build_time_ms": 605,
+        "build_time_success": true,
+        "output_size_mb": 2.31,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.15,
+        "file_count": 1,
+        "js_percentage": 100,
+        "total_gzipped": 50256,
+        "total_size": 158538
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 114.5,
+        "startup_time_ms": 1043.5
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1954.62,
+          "lcp": 2256.93,
+          "speed_index": 1954.62,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 97,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 21.13,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.035,
+        "memory": 996.59,
+        "memory_delta": 37.31,
+        "peak_cpu": 59.2
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 90,
+        "files_count": 13,
+        "halstead_volume": 24213.69,
+        "logical_lines": 438,
+        "maintainability_index": 634.69,
+        "physical_lines": 762
+      }
+    },
+    "snapse": {
+      "build_time": {
+        "build_time_ms": 457,
+        "build_time_success": true,
+        "output_size_mb": 2.19,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 2.51,
+        "file_count": 1,
+        "js_percentage": 100,
+        "total_gzipped": 14611,
+        "total_size": 36737
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 125,
+        "startup_time_ms": 1037
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1355.1,
+          "lcp": 1657.65,
+          "speed_index": 1355.1,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 100,
+          "seo": 100
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 20.63,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.034,
+        "memory": 992.36,
+        "memory_delta": 47.58,
+        "peak_cpu": 59.7
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 35,
+        "files_count": 12,
+        "halstead_volume": 14512.56,
+        "logical_lines": 169,
+        "maintainability_index": 733.22,
+        "physical_lines": 381
+      }
+    },
+    "solid": {
+      "build_time": {
+        "build_time_ms": 555.5,
+        "build_time_success": true,
+        "output_size_mb": 2.18,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 2.86,
+        "file_count": 1,
+        "js_percentage": 100,
+        "total_gzipped": 9243,
+        "total_size": 26458
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 113,
+        "startup_time_ms": 1036.5
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1307.42,
+          "lcp": 1534.39,
+          "speed_index": 1307.42,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 100,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 20.92,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.036,
+        "memory": 993.06,
+        "memory_delta": 39.68,
+        "peak_cpu": 57.7
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 98,
+        "files_count": 12,
+        "halstead_volume": 26202.05,
+        "logical_lines": 458,
+        "maintainability_index": 581.44,
+        "physical_lines": 786
+      }
+    },
+    "svelte": {
+      "build_time": {
+        "build_time_ms": 1298,
+        "build_time_success": true,
+        "output_size_mb": 2.27,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.05,
+        "file_count": 11,
+        "js_percentage": 68.6,
+        "total_gzipped": 38612,
+        "total_size": 117670
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 129,
+        "startup_time_ms": 1248
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0,
+          "fcp": 1657.21,
+          "lcp": 2033.24,
+          "speed_index": 1657.21,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 96,
+          "performance": 98.5,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 21.42,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.035,
+        "memory": 996.09,
+        "memory_delta": 49.45,
+        "peak_cpu": 59.9
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 101,
+        "files_count": 12,
+        "halstead_volume": 16137.4,
+        "logical_lines": 405,
+        "maintainability_index": 690.76,
+        "physical_lines": 797
+      }
+    },
+    "vanilla": {
+      "build_time": {
+        "build_time_ms": 0,
+        "build_time_success": true,
+        "output_size_mb": 0,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 3.8,
+        "file_count": 3,
+        "js_percentage": 100,
+        "total_gzipped": 5480,
+        "total_size": 20806
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 0,
+        "startup_time_ms": 0
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.1459,
+          "fcp": 1225.69,
+          "lcp": 1519.59,
+          "speed_index": 1225.69,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 96,
+          "performance": 94,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 21.38,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.022,
+        "memory": 994.66,
+        "memory_delta": 48.76,
+        "peak_cpu": 64.1
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 74,
+        "files_count": 3,
+        "halstead_volume": 20768.9,
+        "logical_lines": 426,
+        "maintainability_index": 71.69,
+        "physical_lines": 560
+      }
+    },
+    "vanjs": {
+      "build_time": {
+        "build_time_ms": 369,
+        "build_time_success": true,
+        "output_size_mb": 2.17,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 2.87,
+        "file_count": 1,
+        "js_percentage": 96.97,
+        "total_gzipped": 5999,
+        "total_size": 17211
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 116,
+        "startup_time_ms": 1035
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1205.54,
+          "lcp": 1386.32,
+          "speed_index": 1205.54,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 100,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 19.65,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.037,
+        "memory": 982.22,
+        "memory_delta": 51.6,
+        "peak_cpu": 60.9
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 76,
+        "files_count": 3,
+        "halstead_volume": 22895.14,
+        "logical_lines": 388,
+        "maintainability_index": 74.17,
+        "physical_lines": 743
+      }
+    },
+    "vue": {
+      "build_time": {
+        "build_time_ms": 621.5,
+        "build_time_success": true,
+        "output_size_mb": 2.23,
+        "success": true
+      },
+      "bundle_size": {
+        "compression_ratio": 2.61,
+        "file_count": 1,
+        "js_percentage": 100,
+        "total_gzipped": 29349,
+        "total_size": 76585
+      },
+      "dev_server": {
+        "hmr_avg_time_ms": 122.5,
+        "startup_time_ms": 1037.5
+      },
+      "lighthouse": {
+        "raw_metrics": {
+          "cls": 0.0001,
+          "fcp": 1654.38,
+          "lcp": 1841.07,
+          "speed_index": 1654.38,
+          "tbt": 0
+        },
+        "scores": {
+          "accessibility": 100,
+          "best_practices": 100,
+          "performance": 99,
+          "seo": 90
+        }
+      },
+      "resource_usage": {
+        "average_cpu": 20.31,
+        "cpu": 0,
+        "heap_delta": 0,
+        "mem_efficiency": 0.035,
+        "memory": 1001.27,
+        "memory_delta": 49.39,
+        "peak_cpu": 62
+      },
+      "source_analysis": {
+        "cyclomatic_complexity": 57,
+        "files_count": 11,
+        "halstead_volume": 10853.47,
+        "logical_lines": 217,
+        "maintainability_index": 686.46,
+        "physical_lines": 677
+      }
+    }
+  },
+  "metadata": {
+    "benchmarks_included": [
+      "build_time",
+      "bundle_size",
+      "dev_server",
+      "lighthouse",
+      "resource_usage",
+      "source_analysis"
+    ],
+    "generated_at": "2026-11-14",
+    "source_directory": "benchmark-results/2026-11-14"
+  }
+}

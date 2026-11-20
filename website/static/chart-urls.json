@@ -1,0 +1,50 @@
+{
+  "generated_at": "2025-08-19T23:55:00Z",
+  "summary_charts": [
+    {
+      "title": "Performance Overview",
+      "url": "https://quickchart.io/chart/render/zf-c85e2c6e-fb5b-45f5-8222-10f666ccabb0",
+      "chart_id": "performance_radar"
+    },
+    {
+      "title": "Performance vs Bundle Size",
+      "url": "https://quickchart.io/chart/render/zf-73c38b6e-0cf8-41a2-a68d-25647b62711d",
+      "chart_id": "performance_quadrant"
+    },
+    {
+      "title": "Source Code Analysis",
+      "url": "https://quickchart.io/chart/render/zf-a8119e32-40af-400b-bc3a-8c557487c534",
+      "chart_id": "source_analysis"
+    },
+    {
+      "title": "Bundle Size and Comparison",
+      "url": "https://quickchart.io/chart/render/zf-d6a5016b-9926-4bad-9891-5e9a14acdc6b",
+      "chart_id": "bundle_size_comparison"
+    },
+    {
+      "title": "Lighthouse Performance Scores",
+      "url": "https://quickchart.io/chart/render/zf-99be2196-681c-4969-a907-5696ad0938bd",
+      "chart_id": "lighthouse_radial"
+    },
+    {
+      "title": "Loading Performance",
+      "url": "https://quickchart.io/chart/render/zf-861945ff-6b44-449b-9312-ddc165890429",
+      "chart_id": "load_timeline"
+    },
+    {
+      "title": "Project Size Distribution",
+      "url": "https://quickchart.io/chart/render/zf-3fa2bf09-4bf3-4b5c-8e36-7ebb03d0dcce",
+      "chart_id": "project_size_pie"
+    },
+    {
+      "title": "Development Server Performance",
+      "url": "https://quickchart.io/chart/render/zf-c3bd8916-d8fb-4e7a-893e-6c1b5bfcbc74",
+      "chart_id": "dev_server_performance"
+    },
+    {
+      "title": "Build Time Distribution",
+      "url": "https://quickchart.io/chart/render/zf-c0556ed5-d27d-4e52-81c3-9fee2fb48df0",
+      "chart_id": "build_time_donut"
+    }
+  ]
+}
