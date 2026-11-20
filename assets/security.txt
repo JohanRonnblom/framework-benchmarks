@@ -1,1 +1,1 @@
-Contact: mailto:security@as93.net
+Contact: https://github.com/JohanRonnblom/framework-benchmarks/security/advisories/new

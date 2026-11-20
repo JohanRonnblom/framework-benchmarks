@@ -10,7 +10,7 @@
     <meta name="author" content="Alicia Sykes">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="{% block canonical %}https://framework-benchmarks.as93.net{{ request.path if request else '/' }}{% endblock %}">
+    <link rel="canonical" href="{% block canonical %}https://benchmarks.snapse.org{{ request.path if request else '/' }}{% endblock %}">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +25,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="{% block og_title %}{{ config.website.title }}{% endblock %}">
     <meta property="og:description" content="{% block og_description %}{{ config.website.description }}{% endblock %}">
-    <meta property="og:url" content="{% block og_url %}https://framework-benchmarks.as93.net{{ request.path if request else '/' }}{% endblock %}">
-    <meta property="og:image" content="{% block og_image %}https://framework-benchmarks.as93.net/banner.png{% endblock %}">
+    <meta property="og:url" content="{% block og_url %}https://benchmarks.snapse.org{{ request.path if request else '/' }}{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}https://benchmarks.snapse.org/banner.png{% endblock %}">
     <meta property="og:site_name" content="{{ config.website.title }}">
 
     <!-- Twitter Card -->
@@ -35,7 +35,7 @@
     <meta name="twitter:creator" content="@Lissy_Sykes">
     <meta name="twitter:title" content="{% block twitter_title %}{{ config.website.title }}{% endblock %}">
     <meta name="twitter:description" content="{% block twitter_description %}{{ config.website.description }}{% endblock %}">
-    <meta name="twitter:image" content="{% block twitter_image %}https://framework-benchmarks.as93.net/banner.png{% endblock %}">
+    <meta name="twitter:image" content="{% block twitter_image %}https://benchmarks.snapse.org/banner.png{% endblock %}">
     
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/x-icon" href="{{ url_for_static('favicon.png') }}">
@@ -43,7 +43,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="mask-icon" href="/logo.png" color="#6762ff">
-    <meta name="image" content="https://framework-benchmarks.as93.net/banner.png">
+    <meta name="image" content="https://benchmarks.snapse.org/banner.png">
 
     <!-- PWA -->
     <link rel="manifest" href="/manifest.json">
@@ -56,7 +56,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "{{ config.website.title }}",
-        "url": "https://framework-benchmarks.as93.net",
+        "url": "https://benchmarks.snapse.org",
         "description": "{{ config.website.description }}",
         "author": {
             "@type": "Person",
@@ -68,7 +68,7 @@
             "name": "Framework Benchmarks",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://framework-benchmarks.as93.net/logo.png"
+                "url": "https://benchmarks.snapse.org/logo.png"
             }
         }
     }

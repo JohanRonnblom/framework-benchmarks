@@ -356,7 +356,7 @@ def generate_deployment_files(base_url: str, frameworks: List[Dict], output_dir:
     """Generate additional files for deployment (robots.txt, sitemap, etc.)."""
     # Use production URL as default if base_url is empty
     if not base_url:
-        base_url = "https://framework-benchmarks.as93.net"
+        base_url = "https://benchmarks.snapse.org"
 
     # Generate robots.txt
     robots_content = f"User-agent: *\nAllow: /\n\nSitemap: {base_url}/sitemap.xml\n"

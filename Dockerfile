@@ -36,7 +36,7 @@ ENV PIP_BREAK_SYSTEM_PACKAGES=1
 
 LABEL org.opencontainers.image.title="Framework Benchmarks"
 LABEL org.opencontainers.image.description="Cross-framework weather app comparison for automated web performance benchmarking"
-LABEL org.opencontainers.image.url="https://framework-benchmarks.as93.net"
+LABEL org.opencontainers.image.url="https://benchmarks.snapse.org"
 LABEL org.opencontainers.image.source="https://github.com/lissy93/framework-benchmarks"
 LABEL org.opencontainers.image.vendor="Alicia Sykes"
 LABEL org.opencontainers.image.licenses="MIT"

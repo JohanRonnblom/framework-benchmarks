@@ -29,7 +29,7 @@ def generate_section_header(framework: Dict) -> str:
   <img width="64" src="https://raw.githubusercontent.com/lissy93/framework-benchmarks/refs/heads/main/assets/favicon.png" /><br>
   <i>A tiny weather app</i>
   <br>
-  <b><a href="/">🚀 Demo</a> ● <a href="https://frontend-framework-benchmarks.as93.net">📊 Results</a></b>
+  <b><a href="/">🚀 Demo</a> ● <a href="https://benchmarks.snapse.org">📊 Results</a></b>
   <br><br>
   <a href="{meta['website']}" target="_blank"><img src="https://img.shields.io/badge/Framework-{badge_name}-{meta['color'].replace('#', '')}?logo={meta['iconName']}&logoColor=fff&labelColor={meta['accentColor'].replace('#', '')}" /></a>
   <a href="https://github.com/Lissy93/framework-benchmarks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-AE56FF?logo=googledocs&logoColor=fff&labelColor=8A2BE2" /></a>

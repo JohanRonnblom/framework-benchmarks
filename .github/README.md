@@ -3,10 +3,12 @@
 	<i>The same weather app built in 16 different frontend frameworks</i><br>
     For automated cross-framework web performance benchmarking
   <br>
-	<a href="https://framework-benchmarks.as93.net"><img width="96" src="https://storage.googleapis.com/as93-screenshots/project-logos/framework-benchmarks.png" /></a><br>
-	<b>📊 <a href="https://framework-benchmarks.as93.net">View Results</a> </b>  •
+	<a href="https://benchmarks.snapse.org"><img width="96" src="https://storage.googleapis.com/as93-screenshots/project-logos/framework-benchmarks.png" /></a><br>
+	<b>📊 <a href="https://benchmarks.snapse.org">View Results</a> </b>  •
  	<b> 🎯 <a href="https://stack-match.as93.net/">Choose a Framework</a></b>
 </p>
+
+> This is a fork of [lissy93/framework-benchmarks](https://github.com/lissy93/framework-benchmarks) that adds [Snapse](https://snapse.org), measured with the same benchmark suite as every other framework.
 
 ### Intro
 I've built the same weather app in 16 different frontend web frameworks.
@@ -45,23 +47,23 @@ So, without further ado, let's see how every framework weathers the storm! ⛈�
 
 <!-- start_framework_list -->
 <p align="center">
-        <a href="https://framework-benchmarks.as93.net/react/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/react.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/angular/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/angular.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/svelte/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/svelte.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/preact/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/preact.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/solid/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/solid.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/qwik/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/qwik.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/vue/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/vue.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/vue-vapor/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/vue.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/jquery/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/jquery.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/alpine/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/alpine.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/lit/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/lit.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/vanjs/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/vanjs.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/astro/"><img width="48" src="https://astro.build/assets/press/astro-logo-light-gradient.svg" /></a>
-    <a href="https://framework-benchmarks.as93.net/lume-js/"><img width="48" src="https://raw.githubusercontent.com/sathvikc/lume-js/refs/heads/main/lume-logo.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/octane/"><img width="48" src="https://raw.githubusercontent.com/octanejs/octane/main/icon.svg" /></a>
-    <a href="https://framework-benchmarks.as93.net/geajs/"><img width="48" src="https://geajs.com/logo.png" /></a>
-    <a href="https://framework-benchmarks.as93.net/vanilla/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/javascript.png" /></a>
+        <a href="https://benchmarks.snapse.org/react/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/react.png" /></a>
+    <a href="https://benchmarks.snapse.org/angular/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/angular.png" /></a>
+    <a href="https://benchmarks.snapse.org/svelte/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/svelte.png" /></a>
+    <a href="https://benchmarks.snapse.org/preact/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/preact.png" /></a>
+    <a href="https://benchmarks.snapse.org/solid/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/solid.png" /></a>
+    <a href="https://benchmarks.snapse.org/qwik/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/qwik.png" /></a>
+    <a href="https://benchmarks.snapse.org/vue/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/vue.png" /></a>
+    <a href="https://benchmarks.snapse.org/vue-vapor/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/vue.png" /></a>
+    <a href="https://benchmarks.snapse.org/jquery/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/jquery.png" /></a>
+    <a href="https://benchmarks.snapse.org/alpine/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/alpine.png" /></a>
+    <a href="https://benchmarks.snapse.org/lit/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/lit.png" /></a>
+    <a href="https://benchmarks.snapse.org/vanjs/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/vanjs.png" /></a>
+    <a href="https://benchmarks.snapse.org/astro/"><img width="48" src="https://astro.build/assets/press/astro-logo-light-gradient.svg" /></a>
+    <a href="https://benchmarks.snapse.org/lume-js/"><img width="48" src="https://raw.githubusercontent.com/sathvikc/lume-js/refs/heads/main/lume-logo.png" /></a>
+    <a href="https://benchmarks.snapse.org/octane/"><img width="48" src="https://raw.githubusercontent.com/octanejs/octane/main/icon.svg" /></a>
+    <a href="https://benchmarks.snapse.org/geajs/"><img width="48" src="https://geajs.com/logo.png" /></a>
+    <a href="https://benchmarks.snapse.org/vanilla/"><img width="48" src="https://storage.googleapis.com/as93-screenshots/frontend-benchmarks/framework-logos/javascript.png" /></a>
 <br><sub>Click a framework to view info, test/lint/build/etc statuses, and to preview the demo app</sub></p>
 <!-- end_framework_list -->
 
@@ -167,22 +169,22 @@ Note that the project commands get generated automatically by the [`generate_scr
 A summary of results can be viewed in [`summary.tsv`](https://github.com/Lissy93/framework-benchmarks/blob/main/results/summary.tsv).<br>
 Full, detailed results can be found in the [`results`](https://github.com/Lissy93/framework-benchmarks/tree/results) branch,
 or attached as an artifact in the GitHub Actions benchmarking workflow runs.
-For slightly more interactive reports, you can view the website at [framework-benchmarks.as93.net](https://framework-benchmarks.as93.net),
+For slightly more interactive reports, you can view the website at [benchmarks.snapse.org](https://benchmarks.snapse.org),
 and also view a stats on a per-framework basis.
 
 ### Summary
 <p align="center"><sub>The following charts show live data from the latest benchmark run. See the web version for interactive charts.</sub></p>
 <!-- start_summary_charts -->
 <p align="center">
-  <img src="https://quickchart.io/chart/render/zf-cb33b226-4a10-44b4-86c6-58045692ba73" width="256" title="Performance Overview" alt="Performance Overview" />
-  <img src="https://quickchart.io/chart/render/zf-32e05cd3-5741-47db-97c5-64535e8b68b0" width="256" title="Performance vs Bundle Size" alt="Performance vs Bundle Size" />
-  <img src="https://quickchart.io/chart/render/zf-48350b8d-26c2-45f3-b06c-b45f3dc52dc9" width="256" title="Source Code Analysis" alt="Source Code Analysis" />
-  <img src="https://quickchart.io/chart/render/zf-43bf74d3-9300-4dbe-9cb7-968a630cdf38" width="256" title="Bundle Size and Comparison" alt="Bundle Size and Comparison" />
-  <img src="https://quickchart.io/chart/render/zf-e4adf0e6-c9d5-47d7-a219-50cc2bc69c56" width="256" title="Lighthouse Performance Scores" alt="Lighthouse Performance Scores" />
-  <img src="https://quickchart.io/chart/render/zf-e4f26819-a2b0-4c80-a1f1-48c35df96967" width="256" title="Loading Performance" alt="Loading Performance" />
-  <img src="https://quickchart.io/chart/render/zf-502da00d-579e-40b1-af85-a0a2ad0b315e" width="256" title="Project Size Distribution" alt="Project Size Distribution" />
-  <img src="https://quickchart.io/chart/render/zf-04c47587-fdc8-4281-b675-f1b4b63ecaed" width="256" title="Development Server Performance" alt="Development Server Performance" />
-  <img src="https://quickchart.io/chart/render/zf-1d655585-3608-4206-94c9-1d8c7f3312c7" width="256" title="Build Time Distribution" alt="Build Time Distribution" />
+  <img src="https://quickchart.io/chart/render/zf-c85e2c6e-fb5b-45f5-8222-10f666ccabb0" width="256" title="Performance Overview" alt="Performance Overview" />
+  <img src="https://quickchart.io/chart/render/zf-73c38b6e-0cf8-41a2-a68d-25647b62711d" width="256" title="Performance vs Bundle Size" alt="Performance vs Bundle Size" />
+  <img src="https://quickchart.io/chart/render/zf-a8119e32-40af-400b-bc3a-8c557487c534" width="256" title="Source Code Analysis" alt="Source Code Analysis" />
+  <img src="https://quickchart.io/chart/render/zf-d6a5016b-9926-4bad-9891-5e9a14acdc6b" width="256" title="Bundle Size and Comparison" alt="Bundle Size and Comparison" />
+  <img src="https://quickchart.io/chart/render/zf-99be2196-681c-4969-a907-5696ad0938bd" width="256" title="Lighthouse Performance Scores" alt="Lighthouse Performance Scores" />
+  <img src="https://quickchart.io/chart/render/zf-861945ff-6b44-449b-9312-ddc165890429" width="256" title="Loading Performance" alt="Loading Performance" />
+  <img src="https://quickchart.io/chart/render/zf-3fa2bf09-4bf3-4b5c-8e36-7ebb03d0dcce" width="256" title="Project Size Distribution" alt="Project Size Distribution" />
+  <img src="https://quickchart.io/chart/render/zf-c3bd8916-d8fb-4e7a-893e-6c1b5bfcbc74" width="256" title="Development Server Performance" alt="Development Server Performance" />
+  <img src="https://quickchart.io/chart/render/zf-c0556ed5-d27d-4e52-81c3-9fee2fb48df0" width="256" title="Build Time Distribution" alt="Build Time Distribution" />
 </p>
 <!-- end_summary_charts -->
 

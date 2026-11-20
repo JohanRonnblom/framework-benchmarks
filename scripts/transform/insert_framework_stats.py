@@ -102,7 +102,7 @@ def build_table(frws: list[dict], stats_by_id: dict[str, dict]) -> str:
         lines.append("| " + " | ".join(row) + " |")
     return "\n".join(lines)
 
-def build_logo_links(frws: list[dict], base_url: str = "https://framework-benchmarks.as93.net") -> str:
+def build_logo_links(frws: list[dict], base_url: str = "https://benchmarks.snapse.org") -> str:
     """generate framework logo links block"""
     links = [f'<a href="{base_url}/{f["id"]}/"><img width="48" src="{f.get("meta",{}).get("logo","")}" /></a>' 
              for f in frws if f.get("id") and f.get("meta",{}).get("logo")]
