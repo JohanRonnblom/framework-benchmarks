@@ -166,9 +166,7 @@ Note that the project commands get generated automatically by the [`generate_scr
 
 ## Results
 
-A summary of results can be viewed in [`summary.tsv`](https://github.com/Lissy93/framework-benchmarks/blob/main/results/summary.tsv).<br>
-Full, detailed results can be found in the [`results`](https://github.com/Lissy93/framework-benchmarks/tree/results) branch,
-or attached as an artifact in the GitHub Actions benchmarking workflow runs.
+A summary of results can be viewed in [`summary.tsv`](https://github.com/JohanRonnblom/framework-benchmarks/blob/main/results/summary.tsv), with more detail in [`summary.json`](https://github.com/JohanRonnblom/framework-benchmarks/blob/main/results/summary.json).<br>
 For slightly more interactive reports, you can view the website at [benchmarks.snapse.org](https://benchmarks.snapse.org),
 and also view a stats on a per-framework basis.
 
